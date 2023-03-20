@@ -25,7 +25,7 @@ print('\033[94m'+'\033[01m'+'HH   HH AA   AA NN   NN  OOOO0  IIIII      TTT    O
 
 stop=input()
 
-print('\033[01m'+"\nEsta é uma implementação em Python do jogo conhecido como Torre de Hanoi.\nO Objetivo deste jogo é relativamente simples: existem três torres de blocos e você deve transferir o conteúdo da primeira torre para a \nterceira torre na mesma ordem que eles estão dispostos.\nDurante este processo você transferir apenas um bloco por vez e não pode empilhar um bloco de peso maior que o bloco no topo de cada torre.\nO peso dos blocos é indicado por um número.\nCada torre é identificada por um número.\nPara executar um movimento você deve inserir dois valores:\no da torre da qual você está retirando um bloco e o da torre na qual você irá colocar o bloco retirado.\nErros na inserção de dados podem acarretar erros de lógica no programa."+'\033[0;0m')
+print('\033[01m'+"\nEsta é uma implementação em Python do jogo conhecido como Torre de Hanoi.\nO Objetivo deste jogo é relativamente simples:\nexistem três torres de blocos e você deve transferir o conteúdo da primeira torre para a \nterceira torre na mesma ordem que eles estão dispostos.\nDurante este processo você pode transferir apenas um bloco por vez e não pode empilhar um bloco de peso maior que o bloco no topo de cada torre.\nO peso dos blocos é indicado por um número.\nCada torre é identificada por um número.\nPara executar um movimento você deve inserir dois valores:\no da torre da qual você está retirando um bloco e o da torre na qual você irá colocar o bloco retirado.\nErros na inserção de dados podem acarretar erros de lógica no programa."+'\033[0;0m')
 
 stop=input()
 
@@ -154,7 +154,7 @@ def print_hanoi_tower(tower:list, n:int):
 #4: SELECIONANDO A DIFICULDADE DO JOGO E INICIALIZANDO AS TRÊS STACKS DO PARTIDA
 
 #SELECIONANDO O NÍVEL DE DIFICULDADE
-level:int=int(input('Jogador digite:\n"1" para selecionar o modo de jogo com diculdade fácil;\n"2" para selecionar o modo de jogo com diculdade média;\n"3" para selecionar o modo de jogo com diculdade díficil.\n--->'))
+level:int=int(input('Jogador digite:\n"1" para selecionar o modo de jogo com diculdade fácil;\n"2" para selecionar o modo de jogo com diculdade média;\n"3" para selecionar o modo de jogo com diculdade díficil.\n---> '))
 
 #INICIANDO OS OBJETOS DA CLASSE DE STACKS
 tower1=hanoi_stack() #TORRE1, USAR n=1 NA FUNÇÃO print_hanoi_tower
@@ -258,7 +258,7 @@ def help():
  print('|    |   |    |   | 30 |')
  print('+----+   +----+   +----+')
  print('TORRE 1  TORRE 2  TORRE 3\n')
- print('A ideia principal é repetir esta mesma manobra um número suficiente de vezes para ir transportanto os elementos da torre1 para a torre 3.')
+ print('A ideia principal é repetir esta mesma manobra um número suficiente de vezes para ir transportanto os elementos da torre 1 para a torre 3.')
  stop=input()
 
 
